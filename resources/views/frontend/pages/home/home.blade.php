@@ -194,7 +194,7 @@
         </div>
     </section>
 
-    @include('shared\toastr\working-hours\working_hours')
+    @include('shared.toastr.working-hours.working_hours')
 @endsection
 @section('js')
     <script src="{{ asset('vendor/owl-carousel/js/owl.carousel.min.js') }}"></script>

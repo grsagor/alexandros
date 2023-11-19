@@ -57,7 +57,7 @@
         </div>
     </section>
 
-    @include('shared\toastr\working-hours\working_hours')
+    @include('shared.toastr.working-hours.working_hours')
 
 
 
