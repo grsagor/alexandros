@@ -19,7 +19,7 @@
     @include('shared.toastr.toastr')
 
     @include('frontend.include.header')
-    <div class="container">
+    <div>
         @yield('content')
     </div>
     @include('frontend.include.footer')

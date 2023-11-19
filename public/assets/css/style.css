@@ -5,13 +5,22 @@
 :root {
     --bg-primary: #000;
     --text-primary: #ffffff;
+
+    --color-primiary: #3ac162;
   }
 
 body {
     font-family: "Open Sans", sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    padding-top: 75px;
+}
+
+.text-primary {
+    color: #3ac162 !important;
+}
+
+section {
+    padding: 50px 0;
 }
 
 a {
@@ -115,7 +124,7 @@ h6 {
 
 /* Header */
 #header {
-    background: var(--bg-primary);
+    background: #000000c9;
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
@@ -200,7 +209,7 @@ h6 {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 500;
-    color: #37423b;
+    color: var(--text-primary);
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -305,7 +314,7 @@ h6 {
   * Mobile Navigation 
   */
 .mobile-nav-toggle {
-    color: #37423b;
+    color: #3ac162;
     font-size: 28px;
     cursor: pointer;
     display: none !important;
@@ -319,7 +328,7 @@ h6 {
 
 @media (max-width: 991px) {
     .mobile-nav-toggle {
-        display: block;
+        display: block !important;
     }
 
     .navbar ul {
@@ -573,4 +582,21 @@ h6 {
     background: #3ac162;
     color: #fff;
     text-decoration: none;
+}
+
+
+/* Working hours */
+#working-hours {
+    background-color: var(--color-primiary);
+}
+.wokring-hours-content--container {
+    background: linear-gradient(267deg, #0F1807 50%, rgba(15, 24, 7, 0.00) 92.32%), url(../img/home/banner/1.jpg), lightgray 50% / cover no-repeat;
+    margin: 0 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+}
+.working-hours-contents {
+    padding: 50px;
 }
