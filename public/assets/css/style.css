@@ -3,21 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --bg-primary: #000;
-    --text-primary: #ffffff;
+    --dark: #000;
+    --white: #ffffff;
 
-    --color-primiary: #3ac162;
-  }
+    --primiary: #3ac162;
+}
+
+.modal-content {
+    background-color: var(--dark) !important;
+}
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+    background-color: var(--dark);
+    color: var(--white);
 }
 
 .text-primary {
-    color: #3ac162 !important;
+    color: var(--primiary) !important;
 }
+
+.bg-primary {
+    background-color: var(--primiary) !important;
+}
+
+
 
 section {
     padding: 50px 0;
@@ -86,7 +96,7 @@ h6 {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: var(--bg-primary);
+    background: var(--dark);
 }
 
 #preloader:before {
@@ -209,7 +219,7 @@ h6 {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 500;
-    color: var(--text-primary);
+    color: var(--white);
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -426,12 +436,12 @@ h6 {
 #footer {
     color: #37423b;
     font-size: 14px;
-    background: var(--bg-primary);
+    background: var(--dark);
 }
 
 #footer .footer-top {
     padding: 60px 0 30px 0;
-    background: var(--bg-primary);
+    background: var(--dark);
 }
 
 #footer .footer-top .footer-contact {
@@ -587,7 +597,7 @@ h6 {
 
 /* Working hours */
 #working-hours {
-    background-color: var(--color-primiary);
+    background-color: var(--primiary);
 }
 .wokring-hours-content--container {
     background: linear-gradient(267deg, #0F1807 50%, rgba(15, 24, 7, 0.00) 92.32%), url(../img/home/banner/1.jpg), lightgray 50% / cover no-repeat;
@@ -599,4 +609,30 @@ h6 {
 }
 .working-hours-contents {
     padding: 50px;
+}
+
+/* Top bg */
+#top-bg {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img/about-us/top.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(20%);
+    z-index: -1;
 }

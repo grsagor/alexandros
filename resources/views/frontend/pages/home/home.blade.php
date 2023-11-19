@@ -143,7 +143,7 @@
     </section>
 
     <section id="introduction" class="container">
-        <h1 class="text-center">Welcome To ALEXANDROS</h1>
+        <h1 class="text-center mb-0">Welcome To</h1><h1 class="text-center text-primary pb-3">ALEXANDROS</h1>
         <p class="text-center">Angelo Velonis unravels the science of gyros cooking at Alexandros Take Out.</p>
 
         <p class="text-center">Alexandros success is based on controlling three vital elements when it comes to preparing
@@ -194,21 +194,7 @@
         </div>
     </section>
 
-    <section id="working-hours" class="pt-0">
-        <div class="wokring-hours-content--container d-flex justify-content-end">
-            <div class="w-50">
-                <div class="working-hours-contents">
-                    <h1 class="pb-5">Working Hours</h1>
-                    <h5>Thank you for choosing us!</h5>
-                    <h5 class="pb-5">Truly, it is our pleasure.</h5>
-                    <div class="d-flex justify-content-between"><h5>Mon-Wed</h5><h5>11am-4am</h5></div>
-                    <div class="d-flex justify-content-between"><h5>Friday</h5><h5>11am-5am</h5></div>
-                    <div class="d-flex justify-content-between"><h5>Saturday</h5><h5>11am-5am</h5></div>
-                    <div class="d-flex justify-content-between"><h5>Sunday</h5><h5>11am-5am</h5></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('shared\toastr\working-hours\working_hours')
 @endsection
 @section('js')
     <script src="{{ asset('vendor/owl-carousel/js/owl.carousel.min.js') }}"></script>
