@@ -16,11 +16,12 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
         }
 
         .carousel-label {
             text-align: center;
+            font-size: 125px;
         }
 
         .carousel-text {
@@ -107,35 +108,35 @@
             <div class="item">
                 <img src="{{ asset('assets\img\home\banner\1.jpg') }}" alt="">
                 <div class="carousel-text--container">
-                    <h5 class="carousel-label">First slide label</h5>
+                    <h5 class="carousel-label">ALEXANDROS</h5>
                     <p class="carousel-text">Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="item">
                 <img src="{{ asset('assets\img\home\banner\1.jpg') }}" alt="">
                 <div class="carousel-text--container">
-                    <h5 class="carousel-label">First slide label</h5>
+                    <h5 class="carousel-label">ALEXANDROS</h5>
                     <p class="carousel-text">Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="item">
                 <img src="{{ asset('assets\img\home\banner\1.jpg') }}" alt="">
                 <div class="carousel-text--container">
-                    <h5 class="carousel-label">First slide label</h5>
+                    <h5 class="carousel-label">ALEXANDROS</h5>
                     <p class="carousel-text">Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="item">
                 <img src="{{ asset('assets\img\home\banner\1.jpg') }}" alt="">
                 <div class="carousel-text--container">
-                    <h5 class="carousel-label">First slide label</h5>
+                    <h5 class="carousel-label">ALEXANDROS</h5>
                     <p class="carousel-text">Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="item">
                 <img src="{{ asset('assets\img\home\banner\1.jpg') }}" alt="">
                 <div class="carousel-text--container">
-                    <h5 class="carousel-label">First slide label</h5>
+                    <h5 class="carousel-label">ALEXANDROS</h5>
                     <p class="carousel-text">Some representative placeholder content for the first slide.</p>
                 </div>
             </div>

@@ -636,3 +636,21 @@ h6 {
     filter: brightness(20%);
     z-index: -1;
 }
+
+/* Audio */
+.myAudio--conatiner {
+    position: fixed;
+}
+.play-pause--btn {
+    width: 40px;
+    height: 40px;
+    color: #fff !important;
+    background: #5fcf80 !important;
+    border-radius: 50%;
+    margin-left: 30px;
+    padding: 0 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
