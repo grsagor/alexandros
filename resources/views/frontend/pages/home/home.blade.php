@@ -6,10 +6,14 @@
     <style>
         .owl-carousel .item {
             position: relative;
+            height: 80vh;
         }
 
         .owl-carousel .item img {
             filter: brightness(0.5);
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
 
         .carousel-text--container {
@@ -99,6 +103,22 @@
         }
         .bg-image {
             filter: blur(3px);
+        }
+
+        @media screen and (max-width: 992px) {
+            .carousel-label {
+                font-size: 100px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .carousel-label {
+                font-size: 70px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .carousel-label {
+                font-size: 45px;
+            }
         }
     </style>
 @endsection
