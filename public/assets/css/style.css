@@ -27,6 +27,10 @@ body {
     background-color: var(--primiary) !important;
 }
 
+.btn-primary {
+    background-color: var(--primiary) !important;
+}
+
 
 
 section {

@@ -133,28 +133,35 @@
                 </div>
             </div>
             <div class="item">
-                <img src="{{ asset('assets\img\home\banner\1.jpg') }}" alt="">
+                <img src="{{ asset('assets\img\home\banner\2.jpg') }}" alt="">
                 <div class="carousel-text--container">
                     <h5 class="carousel-label">ALEXANDROS</h5>
                     <p class="carousel-text">Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="item">
-                <img src="{{ asset('assets\img\home\banner\1.jpg') }}" alt="">
+                <img src="{{ asset('assets\img\home\banner\3.jpg') }}" alt="">
                 <div class="carousel-text--container">
                     <h5 class="carousel-label">ALEXANDROS</h5>
                     <p class="carousel-text">Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="item">
-                <img src="{{ asset('assets\img\home\banner\1.jpg') }}" alt="">
+                <img src="{{ asset('assets\img\home\banner\4.jpg') }}" alt="">
                 <div class="carousel-text--container">
                     <h5 class="carousel-label">ALEXANDROS</h5>
                     <p class="carousel-text">Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="item">
-                <img src="{{ asset('assets\img\home\banner\1.jpg') }}" alt="">
+                <img src="{{ asset('assets\img\home\banner\5.jpg') }}" alt="">
+                <div class="carousel-text--container">
+                    <h5 class="carousel-label">ALEXANDROS</h5>
+                    <p class="carousel-text">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ asset('assets\img\home\banner\6.jpg') }}" alt="">
                 <div class="carousel-text--container">
                     <h5 class="carousel-label">ALEXANDROS</h5>
                     <p class="carousel-text">Some representative placeholder content for the first slide.</p>
@@ -178,7 +185,7 @@
             kitchen.</p>
 
         <div class="row introduction-card--container mt-5">
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="card position-relative">
                     <img src="{{ asset('assets\img\home\introduction\1.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary">
@@ -186,7 +193,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="card position-relative">
                     <img src="{{ asset('assets\img\home\introduction\2.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary">
@@ -194,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="card position-relative">
                     <img src="{{ asset('assets\img\home\introduction\3.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary">
