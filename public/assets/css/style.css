@@ -604,7 +604,7 @@ h6 {
     background-color: var(--primiary);
 }
 .wokring-hours-content--container {
-    background: linear-gradient(267deg, #0F1807 50%, rgba(15, 24, 7, 0.00) 92.32%), url(../img/home/banner/1.jpg), lightgray 50% / cover no-repeat;
+    background: linear-gradient(267deg, #0F1807 0%, rgba(15, 24, 7, 0.00) 0%), url(../img/home/working-hours/1.jpg), lightgray 50% / cover no-repeat;
     margin: 0 65px;
     background-position: center;
     background-repeat: no-repeat;
@@ -635,9 +635,9 @@ h6 {
     height: 100%;
     background-image: url('assets/img/about-us/top.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
-    filter: brightness(20%);
+    filter: brightness(100%);
     z-index: -1;
 }
 

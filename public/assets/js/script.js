@@ -12,7 +12,7 @@ function PlayStop(button) {
 };
 
 document.addEventListener('click', function() {
-    if ((myaudio.paused || myaudio.ended) && clicked == 0) {
+    if (myaudio.paused && clicked == 0) {
         var playIcon = document.getElementById('play-icon');
         playIcon.classList.toggle('fa-pause', myaudio.paused);
         playIcon.classList.toggle('fa-play', !myaudio.paused);

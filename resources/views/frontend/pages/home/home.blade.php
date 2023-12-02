@@ -189,7 +189,7 @@
                 <div class="card position-relative">
                     <img src="{{ asset('assets\img\home\introduction\1.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title text-center">Gyros</h5>
                     </div>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                 <div class="card position-relative">
                     <img src="{{ asset('assets\img\home\introduction\2.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title text-center">Souvlaki</h5>
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                 <div class="card position-relative">
                     <img src="{{ asset('assets\img\home\introduction\3.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title text-center">Dinner Meals</h5>
                     </div>
                 </div>
             </div>

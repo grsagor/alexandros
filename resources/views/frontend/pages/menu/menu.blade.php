@@ -1,4 +1,14 @@
 @extends('frontend.include.app')
+@section('css')
+    <style>
+        #top-bg::before {
+            background-image: url('assets/img/about-us/top.jpg');
+        }
+    </style>
+@endsection
 @section('content')
-    <h1>Menu</h1>
+    <section id="top-bg">
+        <h1 class="text-white">Menu</h1>
+        <h5 class="text-white">20 years of Alexandros history and memories</h5>
+    </section>
 @endsection
