@@ -1,20 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
-
 :root {
     --dark: #000;
     --white: #ffffff;
 
     --primiary: #3ac162;
+
+    --font-primary: 'Arvo', serif;
+    --font-secondary: 'Kameron', serif;
 }
+
+/* font-family: 'Arvo', serif;
+font-family: 'Kameron', serif;
+font-family: 'Raleway', sans-serif; */
 
 .modal-content {
     background-color: var(--dark) !important;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--font-secondary);
     background-color: var(--dark);
     color: var(--white);
 }
@@ -29,6 +32,14 @@ body {
 
 .btn-primary {
     background-color: var(--primiary) !important;
+}
+
+.font-primary {
+    font-family: var(--font-primary) !important;
+}
+
+.font-secondary {
+    font-family: var(--font-secondary) !important;
 }
 
 
@@ -53,7 +64,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Raleway", sans-serif;
+    font-family: var(--font-primary);
 }
 
 /*--------------------------------------------------------------
@@ -152,7 +163,7 @@ h6 {
     line-height: 1;
     font-weight: 600;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-family: "Poppins", sans-serif;
 }
 
@@ -220,7 +231,7 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
     font-size: 15px;
     font-weight: 500;
     color: var(--white);
