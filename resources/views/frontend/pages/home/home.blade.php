@@ -30,6 +30,7 @@
 
         .carousel-text {
             text-align: center;
+            font-size: 24px;
         }
 
         .owl-theme .owl-nav {
@@ -109,15 +110,24 @@
             .carousel-label {
                 font-size: 100px;
             }
+            .carousel-text {
+                font-size: 20px;
+            }
         }
         @media screen and (max-width: 768px) {
             .carousel-label {
                 font-size: 70px;
             }
+            .carousel-text {
+                font-size: 16px;
+            }
         }
         @media screen and (max-width: 576px) {
             .carousel-label {
                 font-size: 45px;
+            }
+            .carousel-text {
+                font-size: 10px;
             }
         }
     </style>

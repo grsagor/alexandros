@@ -85,7 +85,7 @@ h6 {
 }
 
 .back-to-top i {
-    font-size: 28px;
+    font-size: 18px;
     color: #fff;
     line-height: 0;
 }
@@ -625,6 +625,16 @@ h6 {
 .working-hours-contents {
     padding: 50px;
 }
+.r_u_ready--container {
+    background-color: #ffb821;
+    margin: 0 65px;
+}
+.r_u_ready {
+
+}
+.contact_us--btn {
+    
+}
 
 /* Top bg */
 #top-bg {
@@ -668,4 +678,20 @@ h6 {
     justify-content: center !important;
     flex-direction: column !important;
     align-items: center !important;
+}
+
+/* Fill underline */
+.fill-underline-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.fill-underline {
+    width: 100%;
+    height: 2px;
+    background: var(--primiary);
 }
