@@ -64,13 +64,43 @@
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Double Burger</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Cheese Burger</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Bacon Burger</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Banquet Burger</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Greek Burger</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Add Cheese</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Add Bacon</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
@@ -82,25 +112,49 @@
         <div class="menu-container menu-2 row p-5">
             <div class="menu-card col-6">
                 <div class="d-flex align-items-center mb-3">
-                    <h1 class="menu-title">RoadHouse Burgers</h1>
-                    <span class="menu-title-ext">With 100% Angus Beef</span>
+                    <h1 class="menu-title">Dinners</h1>
+                    <span class="menu-title-ext"></span>
                 </div>
-                <h3 class="menu-subtitle">Try these unique burger recipes for amazing burgers that will delight everyone</h3>
+                <h3 class="menu-subtitle">All Diners served with fries</h3>
                 <div class="menu-item-container my-3">
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Gyros in a Box <small>(Just Meat)</small></p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Gyros on Greek Salad</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Gyros on Greek Fries</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Chicken Souvlaki Dinner</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Chicken Gyros Dinner</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Pork gyros dinner</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Chicken souvlaki stick</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
@@ -114,25 +168,37 @@
             <div class="col-6"></div>
             <div class="menu-card col-6">
                 <div class="d-flex align-items-center mb-3">
-                    <h1 class="menu-title">RoadHouse Burgers</h1>
-                    <span class="menu-title-ext">With 100% Angus Beef</span>
+                    <h1 class="menu-title">World’s Famous Gyros</h1>
+                    <span class="menu-title-ext"></span>
                 </div>
-                <h3 class="menu-subtitle">Try these unique burger recipes for amazing burgers that will delight everyone</h3>
+                <h3 class="menu-subtitle">Gyros that taste very much like what you would eat in Greece. Well seasoned, succulent meat that unapologetically still has some fat in the meat mix.</h3>
                 <div class="menu-item-container my-3">
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Gyros on a Pita</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Greek Veggie Pita</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Chicken Souvlaki Stick</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Tzatziki</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Gravy</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
@@ -144,25 +210,55 @@
         <div class="menu-container menu-4 row p-5">
             <div class="menu-card col-6">
                 <div class="d-flex align-items-center mb-3">
-                    <h1 class="menu-title">RoadHouse Burgers</h1>
-                    <span class="menu-title-ext">With 100% Angus Beef</span>
+                    <h1 class="menu-title">Sides</h1>
+                    <span class="menu-title-ext"></span>
                 </div>
                 <h3 class="menu-subtitle">Try these unique burger recipes for amazing burgers that will delight everyone</h3>
                 <div class="menu-item-container my-3">
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Fries Regular</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Fries Large</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Greek Poutine regular</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Greek Poutine large</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Greek Salad</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Onion Rings</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Gravy</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Tzatziki</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
@@ -176,25 +272,31 @@
             <div class="col-6"></div>
             <div class="menu-card col-6">
                 <div class="d-flex align-items-center mb-3">
-                    <h1 class="menu-title">RoadHouse Burgers</h1>
-                    <span class="menu-title-ext">With 100% Angus Beef</span>
+                    <h1 class="menu-title">Combos</h1>
+                    <span class="menu-title-ext"></span>
                 </div>
-                <h3 class="menu-subtitle">Try these unique burger recipes for amazing burgers that will delight everyone</h3>
+                <h3 class="menu-subtitle"></h3>
                 <div class="menu-item-container my-3">
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Dinner wrap</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Dinner for 2</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
                     </div>
                     <div class="menu-item d-flex position-relative">
-                        <p class="m-0">HamBurger</p>
+                        <p class="m-0">Greek burger Combo</p>
+                        <div class="fill-underline-container">
+                            <div class="fill-underline"></div>
+                        </div>
+                    </div>
+                    <div class="menu-item d-flex position-relative">
+                        <p class="m-0">Vegetarian Combo Greek veggie pita</p>
                         <div class="fill-underline-container">
                             <div class="fill-underline"></div>
                         </div>
