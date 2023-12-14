@@ -19,11 +19,11 @@ class EventController extends Controller
     {
         $artists = User::where('role','6')->get();
         $sponsors = User::where('role','7')->get();
-        $venues = Venue::all();
+        // $venues = Venue::all();
         $data = [
             'artists' => $artists,
             'sponsors' => $sponsors,
-            'venues' => $venues,
+            // 'venues' => $venues,
         ];
         return view('backend.pages.event.index', $data);
     }

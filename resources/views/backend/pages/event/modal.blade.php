@@ -47,9 +47,9 @@
                             <div class="form-group mb-2">
                                 <select name="venue_id" class="form-control mb-1" id="sponsor_id">
                                     <option value="">Select Venue</option>
-                                    @foreach($venues as $row)
+                                    {{-- @foreach($venues as $row)
                                         <option value="{{ $row->id}}">{{ $row->name}}</option>
-                                    @endforeach
+                                    @endforeach --}}
                                 </select>
                             </div>
                             <div class="d-flex gap-2 mb-1 w-100">

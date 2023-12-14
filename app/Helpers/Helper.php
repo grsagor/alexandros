@@ -1,6 +1,6 @@
 <?php // Code within app\Helpers\Helper.php
 
-namespace app\Helpers;
+namespace App\Helpers;
 
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
