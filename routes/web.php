@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\EventController;
+use App\Http\Controllers\Backend\MenuController;
 use App\Http\Controllers\Backend\RoleController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\UserController;
@@ -60,6 +61,16 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/right/delete/{id}', [RoleController::class, 'rightDelete'])->name('admin.role.right.delete');
     });
 
+    Route::group(['prefix' => '/user'], function () {
+        Route::get('/', [UserController::class, 'index'])->name('admin.user');
+        Route::get('/get/list', [UserController::class, 'getList']);
+        Route::post('/store', [UserController::class, 'store'])->name('admin.user.store');
+        Route::get('/edit/{id}', [UserController::class, 'edit'])->name('admin.user.edit');
+        Route::any('/update/{id}', [UserController::class, 'update'])->name('admin.user.update');
+        Route::get('/delete/{id}', [UserController::class, 'delete'])->name('admin.user.delete');
+        Route::post('/change', [UserController::class, 'changePassword'])->name('admin.user.changepassword');
+    });
+
     Route::group(['prefix' => '/event'], function () {
         Route::controller(EventController::class)->group(function () {
             Route::get('/', 'index')->name('admin.event');
@@ -71,13 +82,14 @@ Route::group(['prefix' => 'admin'], function () {
         });
     });
 
-    Route::group(['prefix' => '/user'], function () {
-        Route::get('/', [UserController::class, 'index'])->name('admin.user');
-        Route::get('/get/list', [UserController::class, 'getList']);
-        Route::post('/store', [UserController::class, 'store'])->name('admin.user.store');
-        Route::get('/edit/{id}', [UserController::class, 'edit'])->name('admin.user.edit');
-        Route::any('/update/{id}', [UserController::class, 'update'])->name('admin.user.update');
-        Route::get('/delete/{id}', [UserController::class, 'delete'])->name('admin.user.delete');
-        Route::post('/change', [UserController::class, 'changePassword'])->name('admin.user.changepassword');
+    Route::group(['prefix' => '/menu'], function () {
+        Route::controller(MenuController::class)->group(function () {
+            Route::get('/', 'index')->name('admin.menu');
+            Route::get('/get/list', 'getList');
+            Route::post('/store', 'store')->name('admin.menu.store');
+            Route::get('/edit', 'edit')->name('admin.menu.edit');
+            Route::post('/update', 'update')->name('admin.menu.update');
+            Route::get('/delete', 'delete')->name('admin.menu.delete');
+        });
     });
 });

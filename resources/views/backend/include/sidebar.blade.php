@@ -88,6 +88,13 @@
                     </a>
                 @endif
 
+                @if (Helper::hasRight('menu.view'))
+                    <a class="nav-link {{ Route::is('admin.menu') ? 'active' : '' }}"
+                        href="{{ route('admin.menu') }}">
+                        <div class="sb-nav-link-icon"><i class="fa-regular fa-calendar-days"></i></div> Menu Management
+                    </a>
+                @endif
+
             </div>
         </div>
     </nav>
