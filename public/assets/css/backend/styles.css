@@ -101,7 +101,6 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  background: #00a9ed;
 }
 
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav .sb-sidenav {
@@ -954,6 +953,7 @@ body {
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
   color: #ffffff;
+  background-color: #0A4D68 !important;
 }
 
 .navbar .dropdown:hover>ul {
@@ -1493,4 +1493,30 @@ span.counter {
 .form-floating>label {
   padding: 0.3rem 0.75rem;
   font-size: 0.8rem;
+}
+
+.admin-profile .dropdown-item.logout-btn {
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  color: #0c3c53;
+  padding: 10px !important;
+  white-space: nowrap;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.admin-profile .dropdown-item.logout-btn:hover {
+  color: #ffffff;
+  background-color: #0A4D68 !important;
+}
+
+.logout-btn i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.backend-nav-logo {
+  max-height: 40px;
 }

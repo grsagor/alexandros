@@ -5,7 +5,9 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>ALEXANDROS</h3>
+            <a href="{{ route('frontend.home') }}" class="header-logo-container">
+              <img src="{{ asset('assets/img/logo/logo-4.png') }}" alt="" class="img-fluid">
+            </a>
             <p>
               A108 Adam Street <br>
               New York, NY 535022<br>

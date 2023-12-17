@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Menu;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -13,7 +14,11 @@ class FrontendController extends Controller
         return view('frontend.pages.about-us.about_us');
     }
     public function menu() {
-        return view('frontend.pages.menu.menu');
+        $menus = Menu::all();
+        foreach ($menus as $menu) {
+            $menu->items = json_decode($menu->items);
+        }
+        return view('frontend.pages.menu.menu', compact('menus'));
     }
     public function contactUS() {
         return view('frontend.pages.contact-us.contact_us');

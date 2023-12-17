@@ -25,6 +25,6 @@
     </div>
     <div class="r_u_ready--container d-flex flex-column flex-md-row justify-content-between p-5">
         <h1 class="r_u_ready">Are You Ready To Order?</h1>
-        <button class="contact_us--btn btn btn-danger text-white px-5">Contact Us</button>
+        <a href="{{ route('frontend.contact.us') }}" class="contact_us--btn btn btn-danger text-white px-5 d-flex flex-column justify-content-center align-items-center">Contact Us</a>
     </div>
 </section>

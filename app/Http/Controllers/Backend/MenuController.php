@@ -21,94 +21,59 @@ class MenuController extends Controller
         $data = Menu::all();
 
         return DataTables::of($data)
-            ->rawColumns([])->make(true);
+
+            ->addColumn('action', function ($row) {
+                $btn = '';
+                if (Helper::hasRight('event.edit')) {
+                    $btn = $btn . '<a href="" data-id="' . $row->id . '" class="edit_btn btn btn-sm btn-primary mx-1"><i class="fa-solid fa-pencil"></i></a>';
+                }
+                if (Helper::hasRight('event.delete')) {
+                    $btn = $btn . '<a class="delete_btn btn btn-sm btn-danger " data-id="' . $row->id . '" href=""><i class="fa fa-trash" aria-hidden="true"></i></a>';
+                }
+                return $btn;
+            })
+            ->rawColumns(['action'])->make(true);
     }
     public function store(Request $request)
     {
-        if (!Helper::hasRight('event.create')) {
+        if (!Helper::hasRight('menu.create')) {
             return response()->json([
                 'type' => 'error',
-                'message' => "You don't have rights to create event.",
+                'message' => "You don't have rights to create menu.",
             ]);
         }
         $requestData = $request->all();
         $rules = [
-            'sponsor_id' => 'required',
-            'description' => 'required',
-            'start_datetime' => 'required',
-            'end_datetime' => 'required',
-            'images' => 'nullable|array',
-            'images.*' => 'image|mimes:png,jpg,jpeg,gif,webp',
+            'title' => 'required',
         ];
-
-        if ($requestData['type_of_event'] === 'golder_guiter') {
-            $rules['title'] = 'required';
-            unset($rules['artist_id']);
-        }
-        if ($requestData['type_of_event'] === 'regular') {
-            $rules['artist_id'] = 'required';
-            unset($rules['title']);
-        }
-
         $validator = $request->validate($rules);
 
-        if ($request->type_of_event == 'golder_guiter') {
-            Event::where('type_of_event', 'golder_guiter')->update(['type_of_event' => 'regular']);
+        $menu = new Menu();
+
+        $menu->title = $request->title;
+        $menu->speciality = $request->speciality;
+        $menu->subtitle = $request->subtitle;
+        $menu->price = $request->price;
+        $menu->tax = $request->tax;
+        $menu->in_ex = $request->in_ex;
+
+        $items = [];
+        foreach ($request->items as $index => $value) {
+            $items[] = [
+                'item' => $value,
+                'item_speciality' => $request->item_speciality[$index],
+            ];
+        }
+        $menu->items = json_encode($items);
+
+        if ($request->hasFile('img')) {
+            $image = $request->file('img');
+            $filename = time() . uniqid() . $image->getClientOriginalName();
+            $image->move(public_path('uploads/menu-images'), $filename);
+            $menu->img = 'uploads/menu-images/' . $filename;
         }
 
-        $event = new Event();
-
-        $imgUrls = [];
-        if ($request->hasFile('images')) {
-            $images = $request->file('images');
-            foreach ($images as $image) {
-                $filename = time() . uniqid() . $image->getClientOriginalName();
-                $image->move(public_path('uploads/event-images'), $filename);
-                $imgUrls[] = $filename;
-            }
-        }
-        $requestData['banner'] = json_encode($imgUrls);
-
-        $requestData['status'] = ($request->status) ? 1 : 0;
-        $requestData['is_free'] = ($request->is_free) ? 1 : 0;
-
-        $social_media_links = [
-            'facebook_link' => $request->facebook_link,
-            'spotify_link' => $request->spotify_link,
-            'itunes_link' => $request->itunes_link,
-            'youtube_link' => $request->youtube_link,
-            'instagram_link' => $request->instagram_link,
-            'sponsor_link' => $request->sponsor_link
-        ];
-        $requestData["social_media_links"] = json_encode($social_media_links);
-
-        $event->fill($requestData)->save();
-
-        if (!empty($request->sponsor_id)) {
-            foreach ($request->sponsor_id as $key => $value) {
-                $event_sponsor = new EventSponsor();
-
-                $event_sponsor->event_id = $event->id;
-                $event_sponsor->sponsor_id = $value;
-                $event_sponsor->amount = $request->sponsor_amount[$key];
-
-                $event_sponsor->save();
-            }
-        }
-
-        if (!empty($request->artist_id)) {
-            foreach ($request->artist_id as $key => $value) {
-                $event_artist = new EventArtist();
-
-                $event_artist->event_id = $event->id;
-                $event_artist->artist_id = $value;
-
-                $event_artist->save();
-            }
-        }
-
-
-        if ($event->save()) {
+        if ($menu->save()) {
             return response()->json([
                 'type' => 'success',
                 'message' => 'Event created successfully.',
@@ -122,29 +87,18 @@ class MenuController extends Controller
     }
     public function edit(Request $request)
     {
-        $event = Event::find($request->id);
-        $event->banner = json_decode($event->banner);
-        $social_media_links = json_decode($event->social_media_links);
-        $event_artists = EventArtist::where('event_id', $event->id)->get();
-        $event_sponsors = EventSponsor::where('event_id', $event->id)->get();
-        $artists = User::where('role', '6')->get();
-        $sponsors = User::where('role', '7')->get();
-        $venues = Venue::all();
+        $menu = Menu::find($request->id);
+        $menu->items = json_decode($menu->items);
+
         $data = [
-            'artists' => $artists,
-            'sponsors' => $sponsors,
-            'venues' => $venues,
-            'event' => $event,
-            'event_artists' => $event_artists,
-            'event_sponsors' => $event_sponsors,
-            'social_media_links' => $social_media_links,
+            'menu' => $menu,
         ];
 
-        return view('backend.pages.event.edit', $data);
+        return view('backend.pages.menu.edit', $data);
     }
     public function update(Request $request)
     {
-        if (!Helper::hasRight('event.edit')) {
+        if (!Helper::hasRight('menu.edit')) {
             return response()->json([
                 'type' => 'error',
                 'message' => "You don't have rights to update event.",
@@ -152,92 +106,44 @@ class MenuController extends Controller
         }
         $requestData = $request->all();
         $rules = [
-            'sponsor_id' => 'required',
-            'description' => 'required',
-            'start_datetime' => 'required',
-            'end_datetime' => 'required',
+            'title' => 'required',
         ];
-
-        if ($requestData['type_of_event'] === 'golder_guiter') {
-            $rules['title'] = 'required';
-            unset($rules['artist_id']);
-        }
-        if ($requestData['type_of_event'] === 'regular') {
-            $rules['artist_id'] = 'required';
-            unset($rules['title']);
-        }
 
         $validator = $request->validate($rules);
-        if ($request->type_of_event == 'golder_guiter') {
-            Event::where('type_of_event', 'golder_guiter')->update(['type_of_event' => 'regular']);
+        $menu = Menu::find($request->id);
+
+        $menu->title = $request->title;
+        $menu->speciality = $request->speciality;
+        $menu->subtitle = $request->subtitle;
+        $menu->price = $request->price;
+        $menu->tax = $request->tax;
+        $menu->in_ex = $request->in_ex;
+
+        $items = [];
+        foreach ($request->items as $index => $value) {
+            $items[] = [
+                'item' => $value,
+                'item_speciality' => $request->item_speciality[$index],
+            ];
         }
-        $event = Event::find($request->id);
+        $menu->items = json_encode($items);
 
-        $requestData = $request->all();
-        $banners = json_decode($event->banner);
+        if ($request->hasFile('img')) {
 
-        if ($request->hasFile('images')) {
-            $imgUrls = [];
-            foreach ($banners as $value) {
-                if ($value != Null && file_exists(public_path('uploads/event-images/' . $value))) {
-                    unlink(public_path('uploads/event-images/' . $value));
-                }
+            if ($menu->img) {
+                unlink(public_path($menu->img));
             }
 
-            $images = $request->file('images');
-            foreach ($images as $image) {
-                $filename = time() . uniqid() . $image->getClientOriginalName();
-                $image->move(public_path('uploads/event-images'), $filename);
-                $imgUrls[] = $filename;
-            }
-            $requestData['banner'] = json_encode($imgUrls);
+            $image = $request->file('img');
+            $filename = time() . uniqid() . $image->getClientOriginalName();
+            $image->move(public_path('uploads/menu-images'), $filename);
+            $menu->img = 'uploads/menu-images/' . $filename;
         }
 
-        $requestData['status'] = ($request->status) ? 1 : 0;
-        $requestData['is_free'] = ($request->is_free) ? 1 : 0;
-
-        $social_media_links = [
-            'facebook_link' => $request->facebook_link,
-            'spotify_link' => $request->spotify_link,
-            'itunes_link' => $request->itunes_link,
-            'youtube_link' => $request->youtube_link,
-            'instagram_link' => $request->instagram_link,
-            'sponsor_link' => $request->sponsor_link
-        ];
-        $requestData["social_media_links"] = json_encode($social_media_links);
-
-        $event->fill($requestData)->save();
-
-        EventSponsor::where('event_id', $event->id)->delete();
-        EventArtist::where('event_id', $event->id)->delete();
-
-        if (!empty($request->sponsor_id)) {
-            foreach ($request->sponsor_id as $key => $value) {
-                $event_sponsor = new EventSponsor();
-
-                $event_sponsor->event_id = $event->id;
-                $event_sponsor->sponsor_id = $value;
-                $event_sponsor->amount = $request->sponsor_amount[$key];
-
-                $event_sponsor->save();
-            }
-        }
-
-        if (!empty($request->artist_id)) {
-            foreach ($request->artist_id as $key => $value) {
-                $event_artist = new EventArtist();
-
-                $event_artist->event_id = $event->id;
-                $event_artist->artist_id = $value;
-
-                $event_artist->save();
-            }
-        }
-
-        if ($event->save()) {
+        if ($menu->save()) {
             return response()->json([
                 'type' => 'success',
-                'message' => 'Event updated successfully.',
+                'message' => 'Menu updated successfully.',
             ]);
         } else {
             return response()->json([
@@ -248,36 +154,29 @@ class MenuController extends Controller
     }
     public function delete(Request $request)
     {
-        if (!Helper::hasRight('event.delete')) {
+        if (!Helper::hasRight('menu.delete')) {
             return response()->json([
                 'type' => 'error',
                 'message' => "You don't have rights to delete event.",
             ]);
         }
 
-        $event = Event::find($request->id);
-        if ($event) {
-            $banners = json_decode($event->banner);
-            foreach ($banners as $value) {
-                if ($value != Null && file_exists(public_path('uploads/event-images/' . $value))) {
-                    unlink(public_path('uploads/event-images/' . $value));
-                }
+        $menu = Menu::find($request->id);
+        if ($menu) {
+            if ($menu->img) {
+                unlink(public_path($menu->img));
             }
 
-            EventSponsor::where('event_id', $event->id)->delete();
-            EventArtist::where('event_id', $event->id)->delete();
-            MyFest::where('event_id', $event->id)->delete();
-
-            if ($event->delete()) {
+            if ($menu->delete()) {
                 return response()->json([
                     'type' => 'success',
-                    'message' => 'Event deleted successfully.',
+                    'message' => 'Menu deleted successfully.',
                 ]);
             } else {
-                return redirect()->route('admin.event')->with('error', 'Something went wrong.');
+                return redirect()->route('admin.menu')->with('error', 'Something went wrong.');
             }
         } else {
-            return json_encode(['error' => 'Event not found.']);
+            return json_encode(['error' => 'Menu not found.']);
         }
     }
 }

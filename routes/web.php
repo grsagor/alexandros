@@ -31,11 +31,12 @@ Route::controller(FrontendController::class)->group(function () {
 Route::controller(AuthController::class)->group(function () {
     Route::get('login', 'loginForm')->name('login.form');
     Route::post('login', 'login')->name('login');
+    Route::post('logout', 'logout')->name('logout');
 });
 
-Route::get('admin', [DashboardController::class, 'index'])->name('admin.index');
+Route::group(['prefix' => 'admin', 'middleware' => 'checkAdmin'], function () {
+    Route::get('/', [DashboardController::class, 'index'])->name('admin.index');
 
-Route::group(['prefix' => 'admin'], function () {
     Route::group(['prefix' => '/setting'], function () {
         Route::get('/general', [SettingController::class, 'general'])->name('admin.setting.general');
         Route::get('/static-content', [SettingController::class, 'staticContent'])->name('admin.setting.static.content');
