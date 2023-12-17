@@ -23,4 +23,7 @@ class FrontendController extends Controller
     public function contactUS() {
         return view('frontend.pages.contact-us.contact_us');
     }
+    public function catering() {
+        return view('frontend.pages.catering.catering');
+    }
 }

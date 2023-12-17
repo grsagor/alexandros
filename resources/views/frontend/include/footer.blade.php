@@ -4,47 +4,36 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-6 col-md-6 footer-contact d-flex flex-column align-items-center justify-content-center text-center">
             <a href="{{ route('frontend.home') }}" class="header-logo-container">
-              <img src="{{ asset('assets/img/logo/logo-4.png') }}" alt="" class="img-fluid">
+              <img src="{{ asset('assets/img/logo/logo-5.png') }}" alt="" class="img-fluid">
             </a>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
+              484 Danforth Ave <br>
+              Toronto, ON M4K 1P6<br>
+              Canada <br><br>
+              <strong>Phone:</strong> +1 (416) 461-3073<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://www.ubereats.com/ca/store/alexandros-takeout-danforth/a2hmjyG8TZWCemO4HziDMw">Uber</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://ritual.co/order/alexandros-take-out-danforth-logan-toronto/ff40">Ritual</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://www.skipthedishes.com/alexandros-danforth">Skip the dishes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://www.doordash.com/en-CA/store/alexandros-toronto-37536">Doordash</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a>Catering</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a>Pickup</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a>Dine-in</a></li>
             </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
           </div>
 
         </div>
@@ -66,11 +55,8 @@
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0 d-flex">
-        <a href="#" class="d-flex flex-column justify-content-center align-items-center twitter"><i class="fa-brands fa-twitter"></i></a>
         <a href="#" class="d-flex flex-column justify-content-center align-items-center facebook"><i class="fa-brands fa-facebook"></i></a>
         <a href="#" class="d-flex flex-column justify-content-center align-items-center instagram"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="#" class="d-flex flex-column justify-content-center align-items-center google-plus"><i class="fa-brands fa-skype"></i></a>
-        <a href="#" class="d-flex flex-column justify-content-center align-items-center linkedin"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
   </footer>

@@ -7,7 +7,7 @@
             </a>
         </h1> --}}
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="{{ route('frontend.home') }}" class="logo me-auto"><img src="{{ asset('assets/img/logo/logo-4.png') }}" alt="" class="img-fluid"></a>
+        <a href="{{ route('frontend.home') }}" class="logo me-auto"><img src="{{ asset('assets/img/logo/logo-5.png') }}" alt="" class="img-fluid"></a>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
@@ -19,6 +19,8 @@
                         href="{{ route('frontend.menu') }}">Menu</a></li>
                 <li><a class="{{ request()->routeIs('frontend.contact.us') ? 'active' : '' }}"
                         href="{{ route('frontend.contact.us') }}">Contact Us</a></li>
+                <li><a class="{{ request()->routeIs('frontend.catering') ? 'active' : '' }}"
+                        href="{{ route('frontend.catering') }}">Catering</a></li>
                 <li><button id="play-pause--btn" class="play-pause--btn" onclick="PlayStop(this)"><i class="fa-solid fa-play" id="play-icon"></i></button></li>
             </ul>
             <i class="fa-solid fa-bars mobile-nav-toggle"></i>

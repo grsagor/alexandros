@@ -26,6 +26,7 @@ Route::controller(FrontendController::class)->group(function () {
     Route::get('/about-us', 'aboutUs')->name('frontend.about.us');
     Route::get('/menu', 'menu')->name('frontend.menu');
     Route::get('/contact-us', 'contactUS')->name('frontend.contact.us');
+    Route::get('/catering', 'catering')->name('frontend.catering');
 });
 
 Route::controller(AuthController::class)->group(function () {

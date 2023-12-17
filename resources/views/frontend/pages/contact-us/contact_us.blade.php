@@ -66,8 +66,8 @@
     <div class="address-container container d-flex flex-column justify-content-center align-items-center">
         <i class="fa-solid fa-location-dot text-primary"></i>
         <h3 class="city-name text-center">Toronto</h3>
-        <p class="street-address m-0 text-center">5 Queens Quay W, Toronto, ON M5J 2H1, Canada</p>
-        <p class="contact-number m-0 text-center">+1 416-367-0633</p>
+        <p class="street-address m-0 text-center">484 Danforth Ave, Toronto, ON M4K 1P6, Canada</p>
+        <p class="contact-number m-0 text-center">+1 (416) 461-3073</p>
     </div>
 </section>
 
