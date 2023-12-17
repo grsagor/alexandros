@@ -196,26 +196,26 @@
 
         <div class="row introduction-card--container mt-5">
             <div class="col-12 col-md-6 col-lg-4 mb-3">
-                <div class="card position-relative">
+                <div class="card position-relative ratio ratio-1x1 overflow-hidden">
                     <img src="{{ asset('assets\img\home\introduction\1.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary">
+                    <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary d-flex flex-column justify-content-center">
                         <h5 class="card-title text-center">Gyros</h5>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-3">
-                <div class="card position-relative">
+                <div class="card position-relative ratio ratio-1x1 overflow-hidden">
                     <img src="{{ asset('assets\img\home\introduction\2.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary">
-                        <h5 class="card-title text-center">Souvlaki</h5>
+                    <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary d-flex flex-column justify-content-center">
+                        <h5 class="card-title text-center">Combos</h5>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-3">
-                <div class="card position-relative">
+                <div class="card position-relative ratio ratio-1x1 overflow-hidden">
                     <img src="{{ asset('assets\img\home\introduction\3.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary">
-                        <h5 class="card-title text-center">Dinner Meals</h5>
+                    <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary d-flex flex-column justify-content-center">
+                        <h5 class="card-title text-center">Dinner</h5>
                     </div>
                 </div>
             </div>
