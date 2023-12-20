@@ -1,4 +1,5 @@
 @extends('frontend.include.app')
+@section('title', 'Menu')
 @section('css')
     <style>
         #top-bg::before {

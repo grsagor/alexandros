@@ -664,7 +664,7 @@ h6 {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    filter: brightness(100%);
+    filter: brightness(10%);
     z-index: -1;
 }
 

@@ -1,4 +1,5 @@
 @extends('frontend.include.app')
+@section('title', 'Home')
 @section('css')
     <link rel="stylesheet" href="{{ asset('vendor/owl-carousel/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/owl-carousel/css/owl.theme.default.min.css') }}">

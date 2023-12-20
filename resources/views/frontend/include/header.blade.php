@@ -7,7 +7,7 @@
             </a>
         </h1> --}}
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="{{ route('frontend.home') }}" class="logo me-auto"><img src="{{ asset('assets/img/logo/logo-5.png') }}" alt="" class="img-fluid"></a>
+        <a href="{{ route('frontend.home') }}" class="logo me-auto"><img src="{{ asset('uploads/settings/' . Helper::getSettings('site_logo')) }}" alt="" class="img-fluid"></a>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>

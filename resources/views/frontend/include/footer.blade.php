@@ -6,14 +6,14 @@
 
           <div class="col-lg-6 col-md-6 footer-contact d-flex flex-column align-items-center justify-content-center text-center">
             <a href="{{ route('frontend.home') }}" class="header-logo-container">
-              <img src="{{ asset('assets/img/logo/logo-5.png') }}" alt="" class="img-fluid">
+              <img src="{{ asset('uploads/settings/' . Helper::getSettings('site_logo')) }}" alt="" class="img-fluid">
             </a>
             <p>
               484 Danforth Ave <br>
               Toronto, ON M4K 1P6<br>
               Canada <br><br>
-              <strong>Phone:</strong> +1 (416) 461-3073<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> {{ Helper::getSettings('application_phone') }} <br>
+              <strong>Email:</strong> {{ Helper::getSettings('application_email') }}<br>
             </p>
           </div>
 
@@ -55,8 +55,8 @@
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0 d-flex">
-        <a href="#" class="d-flex flex-column justify-content-center align-items-center facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#" class="d-flex flex-column justify-content-center align-items-center instagram"><i class="fa-brands fa-square-instagram"></i></a>
+        <a target="_blank" href="{{ Helper::getSettings('facebook_link') }}" class="d-flex flex-column justify-content-center align-items-center facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="{{ Helper::getSettings('instagram_link') }}" class="d-flex flex-column justify-content-center align-items-center instagram"><i class="fa-brands fa-square-instagram"></i></a>
       </div>
     </div>
   </footer>

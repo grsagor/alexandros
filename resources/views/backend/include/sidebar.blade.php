@@ -74,7 +74,7 @@
                 @endif
 
 
-                @if (Helper::hasRight('dashboard.view'))
+                {{-- @if (Helper::hasRight('dashboard.view'))
                     <a class="nav-link {{ Route::is('admin.index') ? 'active' : '' }}"
                         href="{{ route('admin.index') }}" >
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div> Dashboard
@@ -86,7 +86,7 @@
                         href="{{ route('admin.event') }}">
                         <div class="sb-nav-link-icon"><i class="fa-regular fa-calendar-days"></i></div> Event Management
                     </a>
-                @endif
+                @endif --}}
 
                 @if (Helper::hasRight('menu.view'))
                     <a class="nav-link {{ Route::is('admin.menu') ? 'active' : '' }}"

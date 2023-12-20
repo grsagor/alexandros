@@ -1,5 +1,5 @@
 @extends('backend.layout.app')
-@section('title', 'Menu | ' . Helper::getSettings('application_name') ?? 'Tamworth 24')
+@section('title', 'Menu | ' . Helper::getSettings('application_name') ?? 'Alexandros')
 @section('css')
     <link rel="stylesheet" href="{{ asset('assets/vendor/tagsinput/tagsinput.css') }}">
 @endsection
