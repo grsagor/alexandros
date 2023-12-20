@@ -29,7 +29,7 @@
     <section>
         <h1 class="text-center mb-5 text-primary">Our South Asian and Indian Items</h1>
         <div class="row container mx-auto justify-content-center">
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/1.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/2.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/3.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/4.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/5.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/6.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/7.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/8.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -117,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/9.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -128,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/10.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -139,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/11.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -150,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/12.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -161,7 +161,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/13.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
@@ -172,7 +172,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card w-100">
                     <div class="catering-img-container">
                         <img src="{{ asset('assets/img/catering/14.jpg') }}" class="card-img-top w-100 h-100 object-fit-cover"
