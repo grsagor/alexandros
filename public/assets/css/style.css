@@ -1,8 +1,12 @@
 :root {
-    --dark: #000;
-    --white: #ffffff;
+    --dark-primary-color: #010A10;
+    --dark-secondary-color: #211D21;
 
-    --primiary: #3ac162;
+    --white-primary-color: #FFFBF2;
+    --white-secondary-color: #DFE2DB;
+
+    --primary-color: #A50113;
+    --secondary-color: #C10206;
 
     --font-primary: 'Arvo', serif;
     --font-secondary: 'Kameron', serif;
@@ -13,25 +17,26 @@ font-family: 'Kameron', serif;
 font-family: 'Raleway', sans-serif; */
 
 .modal-content {
-    background-color: var(--dark) !important;
+    background-color: var(--dark-primary-color) !important;
 }
 
 body {
     font-family: var(--font-secondary);
-    background-color: var(--dark);
-    color: var(--white);
+    background-color: var(--white-primary-color);
+    color: var(--dark-primary-color);
+    font-size: 20px;
 }
 
 .text-primary {
-    color: var(--primiary) !important;
+    color: var(--primary-color) !important;
 }
 
 .bg-primary {
-    background-color: var(--primiary) !important;
+    background-color: var(--primary-color) !important;
 }
 
 .btn-primary {
-    background-color: var(--primiary) !important;
+    background-color: var(--primary-color) !important;
 }
 
 .font-primary {
@@ -111,7 +116,7 @@ h6 {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: var(--dark);
+    background: var(--dark-primary-color);
 }
 
 #preloader:before {
@@ -149,7 +154,7 @@ h6 {
 
 /* Header */
 #header {
-    background: #000000c9;
+    background: var(--primary-color);
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
@@ -172,7 +177,7 @@ h6 {
 }
 
 #header .logo img {
-    max-height: 40px;
+    max-height: 72px;
 }
 
 /**
@@ -230,13 +235,16 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 30px;
+    margin: 10px 0 10px 30px;
     font-family: var(--font-secondary);
-    font-size: 15px;
+    font-size: 26px;
     font-weight: 500;
-    color: var(--white);
+    color: var(--dark-primary-color);
     white-space: nowrap;
     transition: 0.3s;
+    background: var(--white-primary-color);
+    padding: 12px;
+    border-radius: 8px;
 }
 
 .navbar button,
@@ -266,7 +274,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #5fcf80;
+    color: var(--primary-color);
 }
 
 .navbar .dropdown ul {
@@ -451,18 +459,21 @@ h6 {
 #footer {
     color: #37423b;
     font-size: 14px;
-    background: var(--dark);
+    background: var(--dark-primary-color);
 }
 
 .header-logo-container {
     display: block;
     width: 200px;
     margin-bottom: 16px;
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 16px;
 }
 
 #footer .footer-top {
     padding: 60px 0 30px 0;
-    background: var(--dark);
+    background: var(--white-primary-color);
 }
 
 #footer .footer-top .footer-contact {
@@ -618,7 +629,7 @@ h6 {
 
 /* Working hours */
 #working-hours {
-    background-color: var(--primiary);
+    background-color: var(--secondary-color);
 }
 .wokring-hours-content--container {
     background: linear-gradient(267deg, #0F1807 0%, rgba(15, 24, 7, 0.00) 0%), url(../img/home/working-hours/1.jpg), lightgray 50% / cover no-repeat;
@@ -676,7 +687,7 @@ h6 {
     width: 40px;
     height: 40px;
     color: #fff !important;
-    background: #5fcf80 !important;
+    background: var(--white-secondary-color) !important;
     border-radius: 50%;
     margin-left: 30px;
     padding: 0 10px !important;
@@ -699,5 +710,5 @@ h6 {
 .fill-underline {
     width: 100%;
     height: 2px;
-    background: var(--primiary);
+    background: var(--primary-color);
 }

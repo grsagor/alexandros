@@ -11,7 +11,7 @@
         }
 
         .owl-carousel .item img {
-            filter: brightness(0.5);
+            /* filter: brightness(0.5); */
             height: 100%;
             object-fit: cover;
             object-position: center;
@@ -27,11 +27,15 @@
         .carousel-label {
             text-align: center;
             font-size: 125px;
+            color: var(--primary-color);
         }
 
         .carousel-text {
             text-align: center;
             font-size: 24px;
+            background: var(--primary-color);
+            color: var(--white-primary-color);
+            border-radius: 16px;
         }
 
         .owl-theme .owl-nav {
@@ -54,7 +58,8 @@
 
         .owl-carousel .owl-nav button.owl-next,
         .owl-carousel .owl-nav button.owl-prev {
-            background-color: #3ac162 !important;
+            background-color: var(--primary-color) !important;
+            color: var(--white-primary-color);
             padding: 12px !important;
             font-size: 60px;
             margin: 0;
