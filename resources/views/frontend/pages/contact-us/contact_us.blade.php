@@ -21,7 +21,7 @@
         }
 
         #contact-form {
-            background: #001907;
+            background: var(--primary-color);
         }
 
         .contact-form-bg--container {
@@ -53,8 +53,8 @@
 @endsection
 @section('content')
 <section id="top-bg">
-    <h1 class="text-white">Find Alexandros</h1>
-    <h5 class="text-white">Alexandros is located in the heart of Toronto near sugar beach its very easy to find</h5>
+    <h1 class="text-primary page-title">Find Alexandros</h1>
+    <h5 class=" page-subtitle">Alexandros is located in the heart of Toronto near sugar beach its very easy to find</h5>
 </section>
 
 <section id="map" class="p-0 position-relative">
@@ -74,7 +74,7 @@
 
 <section id="contact-form">
     <div class="contact-form-bg--container">
-        <div class="contact-form--container z-1">
+        <div class="contact-form--container z-1 text-white-secondary ">
             <h1>Get In Touch</h1>
             <p>Whether you want to make a reservation or place a delivery order you can do it by phone on +1 416-367-0633 Please fill out the form below to inquire about our restaurant, or to give any feedback about our food or service.</p>
             <form class="w-100">

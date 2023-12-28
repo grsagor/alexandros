@@ -60,8 +60,8 @@
 @endsection
 @section('content')
     <section id="top-bg">
-        <h1 class="text-white">Menu</h1>
-        <h5 class="text-white">20 years of Alexandros history and memories</h5>
+        <h1 class="text-primary page-title">Menu</h1>
+        <h5 class="page-subtitle">20 years of Alexandros history and memories</h5>
     </section>
     <section id="menu" class="p-0 text-primary">
         @foreach ($menus as $menu)

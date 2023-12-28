@@ -17,8 +17,8 @@
 @endsection
 @section('content')
     <section id="top-bg">
-        <h1 class="text-white">About Us</h1>
-        <h5 class="text-white">20 years of Alexandros history and memories</h5>
+        <h1 class="text-primary page-title fw-bold">About Us</h1>
+        <h5 class="page-subtitle">20 years of Alexandros history and memories</h5>
     </section>
     <section id="video" class="bg-primary">
         <div class="row container mx-auto">

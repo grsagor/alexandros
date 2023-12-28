@@ -23,8 +23,8 @@
 @endsection
 @section('content')
     <section id="top-bg">
-        <h1 class="text-white">Catering</h1>
-        <h5 class="text-white">We also do South Asian and Indian Cuisine</h5>
+        <h1 class="text-primary page-title">Catering</h1>
+        <h5 class="page-subtitle">We also do South Asian and Indian Cuisine</h5>
     </section>
     <section>
         <h1 class="text-center mb-5 text-primary">Our South Asian and Indian Items</h1>

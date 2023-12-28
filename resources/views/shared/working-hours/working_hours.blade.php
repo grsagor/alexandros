@@ -2,10 +2,10 @@
     <div class="wokring-hours-content--container row justify-content-end">
         <div class="col-12 col-lg-6"></div>
         <div class="working-hours-contents col-12 col-lg-6">
-            <h1 class="pb-5">Working Hours</h1>
-            <h5>Thank you for choosing us!</h5>
-            <h5 class="pb-5">Truly, it is our pleasure.</h5>
-            <div class="d-flex justify-content-between">
+            <h1 class="pb-5 text-white-secondary">Working Hours</h1>
+            <h5 class="text-white-secondary">Thank you for choosing us!</h5>
+            <h5 class="pb-5 text-white-secondary">Truly, it is our pleasure.</h5>
+            <div class="d-flex justify-content-between text-white-secondary">
                 <h5>Everyday</h5>
                 <h5>11am-11:30pm</h5>
             </div>

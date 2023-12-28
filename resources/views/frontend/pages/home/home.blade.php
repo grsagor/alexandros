@@ -230,7 +230,7 @@
 
     <section id="find" class="pb-0">
         <div class="find-content--container container">
-            <h1 class="text-center">Find Alexandros</h1>
+            <h1 class="text-center text-primary">Find Alexandros</h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.5467975017286!2d-79.3493661!3d43.6783945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cc9c5e593669%3A0x82ee0eca3829d2e5!2sAlexandros%20Take-Out!5e0!3m2!1sen!2sca!4v1702799372810!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="background-container">

@@ -30,6 +30,15 @@ body {
 .text-primary {
     color: var(--primary-color) !important;
 }
+.text-white-primary {
+    color: var(--white-primary-color) !important;
+}
+.text-white-secondary {
+    color: var(--white-secondary-color) !important;
+}
+.text-dark-primary {
+    color: var(--dark-secondary-color) !important;
+}
 
 .bg-primary {
     background-color: var(--primary-color) !important;
@@ -45,6 +54,16 @@ body {
 
 .font-secondary {
     font-family: var(--font-secondary) !important;
+}
+.page-title{
+    text-shadow: 3px 3px 0 #fff, -3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000;
+    font-size: 84px;
+}
+.page-subtitle{
+    background-color: var(--primary-color);
+    border-radius: 9999px;
+    padding:10px 20px;
+    color: var(--white-primary-color);
 }
 
 
@@ -82,7 +101,7 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #5fcf80;
+    background: var(--dark-secondary-color);
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -96,7 +115,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #7ed899;
+    background: #314653;
     color: #fff;
 }
 
@@ -459,7 +478,7 @@ h6 {
 #footer {
     color: #37423b;
     font-size: 14px;
-    background: var(--dark-primary-color);
+    background: var(--primary-color);
 }
 
 .header-logo-container {
@@ -540,7 +559,8 @@ h6 {
 
 #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
-    color: #5fcf80;
+    color: #ffb821;
+    font-weight: bold;
 }
 
 #footer .footer-newsletter {
@@ -597,18 +617,20 @@ h6 {
 }
 
 #footer .credits a {
-    color: #3ac162;
+    color: var(--dark-secondary-color);
+    font-weight: bold;
     transition: 0.3s;
 }
 
 #footer .credits a:hover {
-    color: #5fcf80;
+    color: #ffb821;
+    font-weight: bolder;
 }
 
 #footer .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #5fcf80;
+    background: var(--dark-secondary-color);
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -621,7 +643,7 @@ h6 {
 }
 
 #footer .social-links a:hover {
-    background: #3ac162;
+    background: #ffb821;
     color: #fff;
     text-decoration: none;
 }
@@ -675,7 +697,7 @@ h6 {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    filter: brightness(10%);
+   /* filter: brightness(500%); */
     z-index: -1;
 }
 

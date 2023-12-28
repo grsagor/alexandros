@@ -40,9 +40,9 @@
       </div>
     </div>
 
-    <div class="container d-md-flex py-4">
+    <div class="container d-md-flex py-4 ">
 
-      <div class="me-md-auto text-center text-md-start">
+      <div class="me-md-auto text-center text-md-start text-white-primary">
         <div class="copyright">
           &copy; Copyright <strong><span>ALEXANDROS</span></strong>. All Rights Reserved
         </div>
