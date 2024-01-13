@@ -1478,23 +1478,6 @@ span.counter {
   z-index: 9999 !important;
 }
 
-.form-control {
-  min-height: auto !important;
-  line-height: 1.25 !important;
-  font-size: 0.8rem;
-}
-
-.form-floating>.form-control {
-  min-height: auto !important;
-  height: calc(0.69rem + 2px) !important;
-  line-height: 1.25 !important;
-}
-
-.form-floating>label {
-  padding: 0.3rem 0.75rem;
-  font-size: 0.8rem;
-}
-
 .admin-profile .dropdown-item.logout-btn {
   font-size: 14px;
   text-transform: none;

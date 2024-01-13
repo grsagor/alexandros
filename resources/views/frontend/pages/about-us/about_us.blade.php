@@ -20,7 +20,7 @@
         <h1 class="text-primary page-title fw-bold">About Us</h1>
         <h5 class="page-subtitle">20 years of Alexandros history and memories</h5>
     </section>
-    <section id="video" class="bg-primary">
+    <section id="video" class="bg-primary text-white-primary">
         <div class="row container mx-auto">
             <div class="col-12 col-md-6">
                 <h1>Our Success Story</h1>
@@ -43,7 +43,7 @@
         </div>
     </section>
 
-    <section id="chef" class="container">
+    <section id="chef" class="container text-primary">
         <h1>Our Chef</h1>
         <div class="row flex-column-reverse flex-md-row">
             <div class="col-12 col-md-8">

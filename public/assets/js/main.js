@@ -72,26 +72,16 @@
      */
     let preloader = select('#preloader');
     if (preloader) {
+      let startTime = performance.now();
       window.addEventListener('load', () => {
-        preloader.remove()
+        let endTime = performance.now();
+        let loadTime = endTime - startTime;
+        let timeoutDuration = Math.max(3000 - loadTime);
+        setTimeout(() => {
+          preloader.remove();
+          $('body').css({'overflow': 'visible'});
+        }, timeoutDuration);
       });
     }
-  
-    /**
-     * Animation on scroll
-     */
-    window.addEventListener('load', () => {
-      AOS.init({
-        duration: 1000,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      })
-    });
-  
-    /**
-     * Initiate Pure Counter 
-     */
-    new PureCounter();
   
   })()

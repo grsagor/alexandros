@@ -25,6 +25,7 @@ body {
     background-color: var(--white-primary-color);
     color: var(--dark-primary-color);
     font-size: 20px;
+    overflow: hidden;
 }
 
 .text-primary {
@@ -135,10 +136,15 @@ h6 {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: var(--dark-primary-color);
+    background: #000;
 }
 
-#preloader:before {
+#preloader video {
+    height: 100%;
+    width: 100%;
+}
+
+/* #preloader:before {
     content: "";
     position: fixed;
     top: calc(50% - 30px);
@@ -150,7 +156,7 @@ h6 {
     width: 60px;
     height: 60px;
     animation: animate-preloader 1s linear infinite;
-}
+} */
 
 @keyframes animate-preloader {
     0% {
@@ -189,6 +195,9 @@ h6 {
     letter-spacing: 1px;
     text-transform: lowercase;
     font-family: "Poppins", sans-serif;
+    background: black;
+    padding: 8px;
+    border-radius: 14px;
 }
 
 #header .logo a {
@@ -485,7 +494,7 @@ h6 {
     display: block;
     width: 200px;
     margin-bottom: 16px;
-    background: var(--primary-color);
+    background: black;
     padding: 20px;
     border-radius: 16px;
 }

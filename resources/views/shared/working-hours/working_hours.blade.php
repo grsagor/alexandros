@@ -9,22 +9,10 @@
                 <h5>Everyday</h5>
                 <h5>11am-11:30pm</h5>
             </div>
-            {{-- <div class="d-flex justify-content-between">
-                <h5>Friday</h5>
-                <h5>11am-5am</h5>
-            </div>
-            <div class="d-flex justify-content-between">
-                <h5>Saturday</h5>
-                <h5>11am-5am</h5>
-            </div>
-            <div class="d-flex justify-content-between">
-                <h5>Sunday</h5>
-                <h5>11am-5am</h5>
-            </div> --}}
         </div>
     </div>
     <div class="r_u_ready--container d-flex flex-column flex-md-row justify-content-between p-5">
         <h1 class="r_u_ready">Are You Ready To Order?</h1>
-        <a href="{{ route('frontend.contact.us') }}" class="contact_us--btn btn btn-danger text-white px-5 d-flex flex-column justify-content-center align-items-center">Contact Us</a>
+        <a href="{{ route('frontend.contact.us') }}" class="contact_us--btn btn text-white bg-primary text-white px-5 d-flex flex-column justify-content-center align-items-center">Contact Us</a>
     </div>
 </section>

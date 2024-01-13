@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="{{ asset('vendor/owl-carousel/css/owl.theme.default.min.css') }}">
 
     <style>
+        #banner {
+            margin-top: 115px;
+        }
         .owl-carousel .item {
             position: relative;
             height: 80vh;
@@ -26,7 +29,7 @@
 
         .carousel-label {
             text-align: center;
-            font-size: 125px;
+            font-size: 64px;
             color: var(--primary-color);
         }
 
@@ -114,15 +117,15 @@
 
         @media screen and (max-width: 992px) {
             .carousel-label {
-                font-size: 100px;
+                font-size: 52px;
             }
             .carousel-text {
-                font-size: 20px;
+                font-size: 13px;
             }
         }
         @media screen and (max-width: 768px) {
             .carousel-label {
-                font-size: 70px;
+                font-size: 35px;
             }
             .carousel-text {
                 font-size: 16px;
@@ -130,7 +133,7 @@
         }
         @media screen and (max-width: 576px) {
             .carousel-label {
-                font-size: 45px;
+                font-size: 24px;
             }
             .carousel-text {
                 font-size: 10px;
@@ -242,11 +245,15 @@
 @endsection
 @section('js')
     <script src="{{ asset('vendor/owl-carousel/js/owl.carousel.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            onTranslated: startAnimation,
             responsive: {
                 0: {
                     items: 1
@@ -259,5 +266,24 @@
                 }
             }
         })
+
+        function startAnimation() {
+            let h5 = document.querySelector('.active .carousel-label');
+            h5.innerHTML = h5.textContent.replace(/\S/g, "<span class='letter' style='display: inline-block'>$&</span>");
+
+            let timeline = anime.timeline({
+                autoplay: true,
+                loop: false
+            }).add({
+                targets: '.active .carousel-label .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1000,
+                delay: (el, i) => 70 * i,
+                endDelay: 500
+            });
+        }
+        startAnimation();
     </script>
 @endsection
