@@ -8,6 +8,7 @@
         #banner {
             margin-top: 115px;
         }
+
         .owl-carousel .item {
             position: relative;
             height: 80vh;
@@ -22,15 +23,21 @@
 
         .carousel-text--container {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .carousel-label {
             text-align: center;
-            font-size: 64px;
+            font-size: 116px;
             color: var(--primary-color);
+            font-weight: 700;
         }
 
         .carousel-text {
@@ -39,6 +46,7 @@
             background: var(--primary-color);
             color: var(--white-primary-color);
             border-radius: 16px;
+            width: fit-content;
         }
 
         .owl-theme .owl-nav {
@@ -71,28 +79,33 @@
         .introduction-card--container .card {
             border: none;
         }
+
         .introduction-card--container .card .card-img-top {
             filter: brightness(0.5);
             transition: all 0.5s ease-in-out;
         }
+
         .introduction-card--container .card .card-title {
             font-size: 32px;
             color: #fff;
         }
+
         .introduction-card--container .card:hover>.card-body {
             opacity: 0;
             transition: all 0.5s ease-in-out;
         }
+
         .introduction-card--container .card:hover>img {
             filter: brightness(1);
             transition: all 0.5s ease-in-out;
         }
+
         .card-body {
             opacity: 1;
             transition: all 0.5s ease-in-out;
         }
 
-        #find{
+        #find {
             position: relative;
             margin-top: 150px;
         }
@@ -103,6 +116,7 @@
             background-size: cover;
             overflow: hidden;
         }
+
         .find-content--container {
             position: absolute;
             bottom: 100px;
@@ -111,30 +125,36 @@
             margin: 0 auto;
             z-index: 9;
         }
+
         .bg-image {
             filter: blur(3px);
         }
 
         @media screen and (max-width: 992px) {
             .carousel-label {
-                font-size: 52px;
+                font-size: 92px;
             }
+
             .carousel-text {
                 font-size: 13px;
             }
         }
+
         @media screen and (max-width: 768px) {
             .carousel-label {
-                font-size: 35px;
+                font-size: 66px;
             }
+
             .carousel-text {
                 font-size: 16px;
             }
         }
+
         @media screen and (max-width: 576px) {
             .carousel-label {
-                font-size: 24px;
+                font-size: 46px;
             }
+
             .carousel-text {
                 font-size: 10px;
             }
@@ -190,7 +210,8 @@
     </section>
 
     <section id="introduction" class="container">
-        <h1 class="text-center mb-0">Welcome To</h1><h1 class="text-center text-primary pb-3">ALEXANDROS</h1>
+        <h1 class="text-center mb-0">Welcome To</h1>
+        <h1 class="text-center text-primary pb-3">ALEXANDROS</h1>
         <p class="text-center">Angelo Velonis unravels the science of gyros cooking at Alexandros Take Out.</p>
 
         <p class="text-center">Alexandros success is based on controlling three vital elements when it comes to preparing
@@ -207,7 +228,8 @@
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="card position-relative ratio ratio-1x1 overflow-hidden">
                     <img src="{{ asset('assets\img\home\introduction\1.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary d-flex flex-column justify-content-center">
+                    <div
+                        class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary d-flex flex-column justify-content-center">
                         <h5 class="card-title text-center">Gyros</h5>
                     </div>
                 </div>
@@ -215,7 +237,8 @@
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="card position-relative ratio ratio-1x1 overflow-hidden">
                     <img src="{{ asset('assets\img\home\introduction\2.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary d-flex flex-column justify-content-center">
+                    <div
+                        class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary d-flex flex-column justify-content-center">
                         <h5 class="card-title text-center">Combos</h5>
                     </div>
                 </div>
@@ -223,7 +246,8 @@
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="card position-relative ratio ratio-1x1 overflow-hidden">
                     <img src="{{ asset('assets\img\home\introduction\3.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary d-flex flex-column justify-content-center">
+                    <div
+                        class="card-body position-absolute top-50 start-50 translate-middle text-white text-primary d-flex flex-column justify-content-center">
                         <h5 class="card-title text-center">Dinner</h5>
                     </div>
                 </div>
@@ -234,7 +258,10 @@
     <section id="find" class="pb-0">
         <div class="find-content--container container">
             <h1 class="text-center text-primary">Find Alexandros</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.5467975017286!2d-79.3493661!3d43.6783945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cc9c5e593669%3A0x82ee0eca3829d2e5!2sAlexandros%20Take-Out!5e0!3m2!1sen!2sca!4v1702799372810!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.5467975017286!2d-79.3493661!3d43.6783945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cc9c5e593669%3A0x82ee0eca3829d2e5!2sAlexandros%20Take-Out!5e0!3m2!1sen!2sca!4v1702799372810!5m2!1sen!2sca"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="background-container">
             <img class="w-100 bg-image" src="{{ asset('assets/img/home/find/1.jpg') }}" alt="">

@@ -5,8 +5,8 @@
     --white-primary-color: #FFFBF2;
     --white-secondary-color: #DFE2DB;
 
-    --primary-color: #A50113;
-    --secondary-color: #C10206;
+    --primary-color: #007222;
+    --secondary-color: #5fcf8055;
 
     --font-primary: 'Arvo', serif;
     --font-secondary: 'Kameron', serif;
@@ -639,8 +639,7 @@ h6 {
 #footer .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: var(--dark-secondary-color);
-    color: #fff;
+    background: #fff;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -655,6 +654,31 @@ h6 {
     background: #ffb821;
     color: #fff;
     text-decoration: none;
+}
+.facebook {
+    color: #1877F2;
+    background: #fff;
+}
+.facebook:hover {
+    background: #1877F2 !important;
+    color: #fff;
+}
+
+.instagram-icon {
+    font-size: 18px !important;
+    background: -webkit-linear-gradient(#8a3ab9, #fd7e14) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+.instagram:hover {
+    background: linear-gradient(#8a3ab9, #fd7e14) !important;
+    transition: 0.3s;
+}
+.instagram:hover .instagram-icon {
+    background: -webkit-linear-gradient(transparent, transparent) !important;
+    -webkit-text-fill-color: #fff;
+    transition: 0.3s;
 }
 
 
