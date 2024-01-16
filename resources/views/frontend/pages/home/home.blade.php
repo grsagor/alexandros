@@ -47,6 +47,7 @@
             color: var(--white-primary-color);
             border-radius: 16px;
             width: fit-content;
+            padding: 0 12px;
         }
 
         .owl-theme .owl-nav {
