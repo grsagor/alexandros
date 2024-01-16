@@ -49,7 +49,7 @@
     </section>
     <section id="menu" class="p-0 text-primary container mt-5">
         @foreach ($menus as $menu)
-            <div class="row menu-container mb-3">
+            <div class="row menu-container mb-3 m-0">
                 <div class="col-12 col-md-6">
                     <div class="border p-3 h-100">
                         <h1 class="menu-title">{{ $menu->title }}</h1>
