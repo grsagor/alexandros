@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo&family=Caesar+Dressing&family=Kameron&family=Raleway&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

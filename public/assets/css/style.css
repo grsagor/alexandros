@@ -8,8 +8,8 @@
     --primary-color: #007222;
     --secondary-color: #5fcf8055;
 
-    --font-primary: 'Arvo', serif;
-    --font-secondary: 'Kameron', serif;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
 }
 
 /* font-family: 'Arvo', serif;
@@ -195,7 +195,7 @@ h6 {
     letter-spacing: 1px;
     text-transform: lowercase;
     font-family: "Poppins", sans-serif;
-    background: black;
+    background: transparent;
     padding: 8px;
     border-radius: 14px;
 }
@@ -404,19 +404,20 @@ h6 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(32, 38, 34, 0.9);
-    transition: 0.3s;
+    background: var(--primary-color);
+    /* transition: 0.3s; */
     z-index: 999;
 }
 
 .navbar-mobile .mobile-nav-toggle {
     position: absolute;
-    top: 15px;
+    top: 32px;
     right: 15px;
 }
 
 .navbar-mobile ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 55px;
     right: 15px;
@@ -424,16 +425,26 @@ h6 {
     left: 15px;
     padding: 10px 0;
     border-radius: 6px;
-    background-color: #fff;
     overflow-y: auto;
     transition: 0.3s;
+}
+.navbar-mobile button {
+    margin-left: 0;
 }
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
+    width: fit-content;
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 52px;
     color: #37423b;
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar-mobile .play-pause--btn {
+    width: 64px !important;
+    height: 64px !important;
+    font-size: 42px !important;
 }
 
 .navbar-mobile a:hover,
@@ -494,7 +505,7 @@ h6 {
     display: block;
     width: 200px;
     margin-bottom: 16px;
-    background: black;
+    background: var(--primary-color);
     padding: 20px;
     border-radius: 16px;
 }
@@ -741,8 +752,8 @@ h6 {
 .play-pause--btn {
     width: 40px;
     height: 40px;
-    color: #fff !important;
-    background: var(--white-secondary-color) !important;
+    color: var(--primary-color) !important;
+    background: var(--white-primary-color) !important;
     border-radius: 50%;
     margin-left: 30px;
     padding: 0 10px !important;
