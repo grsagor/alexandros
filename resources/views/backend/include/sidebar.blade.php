@@ -13,7 +13,7 @@
         <div class="sb-sidenav-menu">
 
             <div class="nav">
-                @if (Helper::hasRight('setting.view'))
+                {{-- @if (Helper::hasRight('setting.view'))
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#settingNav"
                         aria-expanded="@if(Route::is('admin.setting.general') || Route::is('admin.setting.static.content') || Route::is('admin.setting.legal.content') || Route::is('admin.contact') || Route::is('admin.resource')) true @else false @endif" aria-controls="collapseLayouts">
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-gear"></i></div> Setup
@@ -38,11 +38,11 @@
                             @endif
                         </nav>
                     </div>
-                @endif
+                @endif --}}
 
 
                 {{-- admin  --}}
-                @if (Helper::hasRight('setting.view'))
+                {{-- @if (Helper::hasRight('setting.view'))
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#setupNav"
                         aria-expanded="@if(Route::is('admin.role') || Route::is('admin.role.create') || Route::is('admin.role.edit') || Route::is('admin.role.right') || Route::is('admin.partner') || Route::is('admin.partner.product') || Route::is('admin.user')) true @else false @endif" aria-controls="collapseLayouts">
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-user-shield"></i></div> Administration
@@ -58,11 +58,11 @@
                                 <a class="nav-link {{ Route::is('admin.role.right') ? 'active' : '' }}"
                                     href="{{ route('admin.role.right') }}"><i class="fa-solid fa-angles-right ikon"></i> Right Management</a>
                             @endif
-                            {{-- @if (Helper::hasRight('partner.view'))
+                            @if (Helper::hasRight('partner.view'))
                                 <a class="nav-link {{ Route::is('admin.partner') ? 'active' : '' }}"
                                     href="{{ route('admin.partner') }}"><i class="fa-solid fa-angles-right ikon"></i> Partner Management
                                 </a>
-                            @endif --}}
+                            @endif
 
                             @if (Helper::hasRight('user.view'))
                                 <a class="nav-link {{ Route::is('admin.user') ? 'active' : '' }}"
@@ -71,7 +71,7 @@
                             @endif
                         </nav>
                     </div>
-                @endif
+                @endif --}}
 
 
                 {{-- @if (Helper::hasRight('dashboard.view'))
@@ -94,7 +94,12 @@
                         <div class="sb-nav-link-icon"><i class="fa-regular fa-calendar-days"></i></div> Menu Management
                     </a>
                 @endif
-
+                @if (Helper::hasRight('menu.view'))
+                    <a class="nav-link {{ Route::is('admin.catering') ? 'active' : '' }}"
+                        href="{{ route('admin.catering') }}">
+                        <div class="sb-nav-link-icon"><i class="fa-regular fa-calendar-days"></i></div> Catering Management
+                    </a>
+                @endif
             </div>
         </div>
     </nav>

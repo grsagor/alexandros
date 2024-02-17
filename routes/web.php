@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Backend\CateringController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\EventController;
 use App\Http\Controllers\Backend\MenuController;
@@ -92,6 +93,17 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkAdmin'], function () {
             Route::get('/edit', 'edit')->name('admin.menu.edit');
             Route::post('/update', 'update')->name('admin.menu.update');
             Route::get('/delete', 'delete')->name('admin.menu.delete');
+        });
+    });
+
+    Route::group(['prefix' => '/catering'], function () {
+        Route::controller(CateringController::class)->group(function () {
+            Route::get('/', 'index')->name('admin.catering');
+            Route::get('/get/list', 'getList');
+            Route::post('/store', 'store')->name('admin.catering.store');
+            Route::get('/edit', 'edit')->name('admin.catering.edit');
+            Route::post('/update', 'update')->name('admin.catering.update');
+            Route::get('/delete', 'delete')->name('admin.catering.delete');
         });
     });
 });

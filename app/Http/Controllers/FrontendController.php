@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Catering;
 use App\Models\Menu;
 use Illuminate\Http\Request;
 
@@ -24,6 +25,8 @@ class FrontendController extends Controller
         return view('frontend.pages.contact-us.contact_us');
     }
     public function catering() {
-        return view('frontend.pages.catering.catering');
+        $caterings = Catering::where('status', 1)->get();
+        return $caterings;
+        return view('frontend.pages.catering.catering', compact('caterings'));
     }
 }
